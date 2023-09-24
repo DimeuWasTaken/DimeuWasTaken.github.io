@@ -3,9 +3,19 @@
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap'
 
-body
-  font-family: "Pixel Millennium", serif
-  font-size: 50px
+$backgroundColor: #171744
+$font-primary: 'pixel'
 
+@font-face
+  font-family: $font-primary
+  src: url('./assets/fonts/pixel.ttf')
+  font-weight: 300
+  font-style: normal
+
+body
+  font-family: $font-primary
+  font-size: 30px
+  background-color: $backgroundColor
+  color: white
 
 
