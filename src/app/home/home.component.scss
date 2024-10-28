@@ -1,0 +1,130 @@
+.home-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    .home-frame {
+        height: 45vh;
+        width: 45vh;
+        border: 1vh solid var(--frame-color);
+        border-radius: 100%;
+        overflow: hidden;
+        margin-right: 20vw;
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    .home-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 20vw;
+        height: 100%;
+        text-align: left;
+
+        .home-text-title {
+            font-size: 60px;
+            padding-bottom: 5vh;
+
+            b {
+                color: var(--header-color-light);
+                font-size: 75px;
+            }
+        }
+
+        .home-text-description {
+            font-size: 25px;
+            color: var(--header-color-dark);
+        }
+    }
+}
+
+@media (max-width: 624px) {
+    .home-content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .home-frame {
+            width: 80%;
+            max-width: 30vh;
+            height: auto;
+            margin: 3vh;
+            margin-top: 0;
+
+            img {
+                height: 100%;
+                width: 100%
+            }
+        }
+
+        .home-text {
+            width: 80%;
+            height: auto;
+            text-align: center;
+
+            .home-text-title { 
+                font-size: clamp(20px, 30px, 55px);
+                padding: 0;
+
+                b {
+                    font-size: clamp(35px, 45px, 70px);
+                }
+            }
+
+            .home-text-description {
+                font-size: 20px;
+            }
+        }
+    }
+
+    /* .home-content {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        justify-content: center;
+        height: auto; 
+        padding: 20px; 
+
+        .home-frame {
+            height: 45vh;
+            width: 45vh;
+            max-width: 45vh; 
+            margin: 3vh;
+            margin-top: 0;
+            border-radius: 50%;
+
+            img {
+                max-width: 100%; 
+                height: auto;
+                object-fit: cover;
+                border-radius: 50%; 
+            }
+        }
+
+        .home-text {
+            width: 80%; 
+            height: auto;
+            text-align: center; 
+            margin-bottom: 2vh; 
+
+            .home-text-title {
+                font-size: clamp(20px, 30px, 55px); 
+                padding: 0;
+
+                b {
+                    font-size: clamp(35px, 45px, 70px); 
+                }
+            }
+
+            .home-text-description {
+                font-size: 20px; 
+                color: var(--header-color-dark);
+            }
+        }
+    } */
+}
