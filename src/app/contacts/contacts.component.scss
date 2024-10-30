@@ -25,12 +25,30 @@
             height: 6vh;
             width: 45vw;
             max-width: 31em;
+            min-width: 15em;
             background-color: var(--background-color);
             border: 5px solid black;
             margin: 2vh 0;  
             padding: 1vh;
             border-radius: 15px;
             align-content: center;
+
+            display: flex;
+            align-items: center;
+
+            .contact-icon {
+                width: 20%;
+                min-width: 3.4em;
+                .pi {
+                    font-size: clamp(20px, 10vw, 30px)
+                }
+            }
+
+            .contact-text {
+                width: 80%;
+                font-size: clamp(10px, 5vw, 16px);
+                justify-content: center;
+            }
         }
         .contact-box#c1{
             color: var(--container-color-dark);
